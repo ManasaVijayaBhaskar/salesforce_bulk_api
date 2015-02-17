@@ -3,7 +3,8 @@ module SalesforceBulkApi
   class Job
     attr_reader :job_id
 
-    class SalesforceException < StandardError; end
+    class SalesforceException < StandardError
+    end
 
     def initialize(operation: nil, sobject: nil, records: nil, external_field: nil, connection: nil, job_id: nil)
       @job_id         = job_id
